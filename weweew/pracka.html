@@ -8,8 +8,11 @@
     </title>
 </head>
 <body>
-    <fieldset>
-        <legend>KANTOR WALUT</legend>
+    <section class="section">
+    <form class="form">
+    <fieldset class="form__fieldset">
+        <legend class="form__legend">KANTOR WALUT</legend>
+        <div class="form__container">
     kwota*
     <input type="number" name="kwota" id="kwota" placeholder="100">
     <select name="waluty" id="waluty">
@@ -47,6 +50,9 @@
     <br>
     
     <div id="wys">Otrzymasz: </div>
+
+</form>
+</section>
     <script>
         function ify(){
             var wys = document.getElementById("wys")

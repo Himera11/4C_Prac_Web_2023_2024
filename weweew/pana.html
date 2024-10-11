@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head> 
+    <link rel="stylesheet" href="jo.css">
+    <title>
+        Kantor Walut
+    </title>
+</head>
+<body>
+    <section class="section">
+    <form class="form js-form">
+    <fieldset class="form__fieldset">
+        <legend class="form__legend">KANTOR WALUT</legend>
+        <div class="form__container">
+            <label class="form__label">
+                kwota*:
+                <input class="form__input js-inputAmount" type="number" placeholder="100" required>
+                <select class="js-selectCurrency" name="selectCurrency" id="waluty">
+                    <option value="pln">PLN</option>
+                    <option value="usd">USD</option>
+                    <option value="gbp">GBP</option>
+                    <option value="eur">EUR</option>
+                    <option value="chf">CHF</option>
+                </select>
+            </label>
+            <p>*- pole wymagane</p>
+        </div>
+        <div class="form__container">
+            <p>
+                Wybierz walutę docelową:
+            </p>
+            <ul class="form__list">
+                <li class="form__listItem">
+                    <label class="form__label">
+                        <input class="js-form" type="radio" value="PLN" name="radio" checked> PLN
+                    </label>
+                </li>
+                <li class="form__listItem">
+                    <label class="form__label">
+                        <input class="js-form" type="radio" value="USD" name="radio" checked> PLN
+                    </label>
+                </li>
+                <li class="form__listItem">
+                    <label class="form__label">
+                        <input class="js-form" type="radio" value="GBP" name="radio" checked> PLN
+                    </label>
+                </li>
+                <li class="form__listItem">
+                    <label class="form__label">
+                        <input class="js-form" type="radio" value="EUR" name="radio" checked> PLN
+                    </label>
+                </li>
+                <li class="form__listItem">
+                    <label class="form__label">
+                        <input class="js-form" type="radio" value="CHF" name="radio" checked> PLN
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </fieldset>
+    <div class="form__container">
+        <button class="form__button js-form_button" type="submit">PRZELICZ</button>
+    </div>
+</form>
+<p class="section__paragraph">Otrzymasz: <span class="section__value js-section__value"></span><span class="section__currency js-section__currency"></span></p>
+</section>
+
+</body>
+</html>
